@@ -27,7 +27,9 @@ header {
     padding: 20px;
     display: flex; 
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: space-between;
+    background-image: radial-gradient( circle farthest-corner at 48.4% 47.5%,  rgba(122,183,255,1) 0%, rgba(21,83,161,1) 90% );
+
 }
 
 .logo-container img {
@@ -128,4 +130,180 @@ footer {
 footer a {
     text-decoration: none;
     color: #333;
+}
+
+/* ... (styles précédents de la page d'accueil) ... */
+
+/* ... (styles précédents) ... */
+
+.login-form {
+    text-align: center;
+    padding: 30px; /* Augmentation de l'espacement interne */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 30px auto; /* Ajout de marges externes */
+    max-width: 400px; /* Limite la largeur du formulaire */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: calc(100% - 20px); /* Pour tenir compte du padding */
+    padding: 12px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.login-form h2 {
+    font-size: 3em; /* Titre plus grand */
+    margin-bottom: 30px;
+}
+
+.login-options a {
+    text-decoration: underline; /* Souligne les liens */
+}
+
+.biometric-auth, .otp-auth {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#fingerprint-area {
+    /* Styles pour la zone d'empreinte digitale */
+}
+
+/* ... (styles précédents) ... */
+
+/* Modal (fenêtre pop-up) */
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed; /* Reste en place */
+    z-index: 1; /* Au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permet le défilement si le contenu est trop long */
+    background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centré verticalement et horizontalement */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ou une largeur fixe en pixels */
+    max-width: 500px; /* Limite la largeur maximale */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Page d'inscription */
+.registration-form {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 30px auto;
+    max-width: 600px; /* Ajustez la largeur selon vos besoins */
+}
+
+#fingerprint-area {
+    /* Styles pour la zone d'empreinte digitale */
+}
+
+.registration-info {
+    margin-top: 30px;
+}
+
+.registration-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Page de vote */
+.voting-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.voting-instructions {
+    margin-bottom: 20px;
+}
+
+.candidates-list {
+    /* Styles pour la liste des candidats */
+}
+
+.confirmation-modal {
+    /* Styles similaires au modal de la page de connexion */
+    display: none;
+    /* ... */
+}
+
+.success-message {
+    /* Styles pour le message de succès */
+    display: none;
+    /* ... */
+}
+
+/* ... (styles précédents) ... */
+
+/* Page de vote */
+.voting-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.voting-instructions {
+    margin-bottom: 20px;
+}
+
+.candidates-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Pour aligner les candidats horizontalement */
+    justify-content: space-around; /* Espace les candidats uniformément */
+}
+
+.candidates-list li {
+    text-align: center; /* Centre le contenu de chaque candidat */
+}
+
+.candidates-list img {
+        width: 100px; /* Définissez la largeur souhaitée */
+        height: 100px; /* Définissez la hauteur souhaitée */
+        object-fit: cover; /* Pour que l'image remplisse l'espace sans être déformée */
+}
+
+.confirmation-modal {
+    /* ... (styles du modal) ... */
+}
+
+.success-message {
+    /* ... (styles du message de succès) ... */
 }
