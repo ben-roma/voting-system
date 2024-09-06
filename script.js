@@ -73,3 +73,57 @@ document.getElementById("voting-form").addEventListener("submit", function(event
 });
 
 // ... (autres fonctions pour gérer le modal, le reçu, l'envoi du vote au backend, etc.)
+
+// Remplacez les placeholders par les vraies informations (reçues du backend après le vote)
+document.getElementById('voter-nip').textContent = "[NIP de l'électeur]";
+document.getElementById('vote-timestamp').textContent = "[Date et heure du vote]";
+document.getElementById('selected-candidate').textContent = "[Nom du candidat sélectionné]";
+document.getElementById('verification-code').textContent = "[Code de vérification unique]";
+
+// Gestionnaire d'événement pour le bouton "Imprimer le reçu"
+document.getElementById("print-receipt").addEventListener("click", function() {
+    window.print(); 
+});
+
+// Fonction pour remplir le tableau des résultats (à compléter avec les données du backend)
+function displayResults(electionId) {
+    // ... Logique pour récupérer les résultats de l'élection sélectionnée depuis le backend ou la blockchain
+    // ... Mettre à jour le contenu du tableau `results-table` avec les données récupérées
+}
+
+// Gestionnaire d'événement pour le menu déroulant de sélection de l'élection
+document.getElementById("election-dropdown").addEventListener("change", function() {
+    const selectedElection = this.value;
+    displayResults(selectedElection);
+});
+
+// ... (autres fonctions pour gérer les filtres de recherche, la visualisation des résultats, le téléchargement et le partage)
+
+// Fonctions pour remplir dynamiquement les listes, les graphiques et le tableau des résultats (à compléter)
+function loadElections() {
+    // ...
+}
+
+function searchVoters() {
+    // ...
+}
+
+function displayParticipationChart() {
+    // ...
+}
+
+function displayVotesByCandidateChart() {
+    // ...
+}
+
+function displayResults() {
+    // ...
+}
+
+// Appels des fonctions au chargement de la page
+loadElections();
+displayParticipationChart();
+displayVotesByCandidateChart();
+displayResults();
+
+// ... (autres gestionnaires d'événements pour les boutons et les filtres de recherche)

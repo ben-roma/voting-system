@@ -34,26 +34,26 @@
                     <div class="candidates-list">
                         <ul>
                             <li>
-                                <input type="radio" id="candidat1" name="vote" value="candidat1" src="images/albert.jpeg" required>
                                 <label for="candidat1">
-                                    <img src="images/albert.jpeg" alt="Photo du candidat 1">
+                                    <img src="images/avatar03.png" alt="Photo du candidat 1">
                                     <h3>Candidat 1</h3>
+                                    <input type="radio" id="candidat1" name="vote" value="candidat1" required>
                                     <p>Parti A</p>
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" id="candidat2" name="vote" value="candidat2">
                                 <label for="candidat2">
-                                    <img src="images/oligui.jpg" alt="Photo du candidat 2">
+                                    <img src="images/1.png" alt="Photo du candidat 2">
                                     <h3>Candidat 2</h3>
+                                    <input type="radio" id="candidat2" name="vote" value="candidat2">
                                     <p>Parti B</p>
                                 </label>
                             </li>
                             <li>
-                                <input type="radio" id="candidat3" name="vote" value="candidat3">
                                 <label for="candidat3">
-                                    <img src="images/billi.jpg" alt="Photo du candidat 3">
+                                    <img src="images/consultant-thumb.png" alt="Photo du candidat 3">
                                     <h3>Candidat 3</h3>
+                                    <input type="radio" id="candidat3" name="vote" value="candidat3">
                                     <p>Parti C</p>
                                 </label>
                             </li>
@@ -69,6 +69,23 @@
                     <div class="modal-buttons">
                         <button type="button" class="btn btn-primary" id="confirm-vote">Confirmer</button>
                         <button type="button" class="btn" onclick="closeModal()">Annuler</button>
+                    </div>
+                </div>
+                <div class="confirmation-modal" id="confirmation-modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h3>Confirmez votre vote</h3>
+                        <div class="selected-candidate-info">
+                            <img id="selected-candidate-photo" src="" alt="Photo du candidat sélectionné">
+                            <p>Vous avez sélectionné :</p>
+                            <h4 id="selected-candidate-name"></h4>
+                            <p id="selected-candidate-party"></p>
+                        </div>
+                        <p>Êtes-vous sûr de vouloir confirmer votre vote ?</p>
+                        <div class="modal-buttons">
+                            <button type="button" class="btn btn-primary" id="confirm-vote">Confirmer</button>
+                            <button type="button" class="btn" onclick="closeModal()">Annuler</button>
+                        </div>
                     </div>
                 </div>
 

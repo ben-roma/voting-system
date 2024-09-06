@@ -307,3 +307,151 @@ footer a {
 .success-message {
     /* ... (styles du message de succès) ... */
 }
+
+/* ... (styles précédents) ... */
+
+/* Modal de confirmation */
+.confirmation-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center; /* Pour centrer le contenu */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.selected-candidate-info {
+    margin-bottom: 20px;
+}
+
+#selected-candidate-photo {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+/* ... (styles précédents) ... */
+
+/* Page de reçu */
+.receipt-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.receipt-details {
+    margin-bottom: 20px;
+}
+
+.receipt-details p {
+    margin-bottom: 10px;
+}
+
+.receipt-instructions {
+    margin-bottom: 20px;
+}
+
+/* ... (styles précédents) ... */
+
+/* Page de résultats */
+.results-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.election-selection, .search-filters {
+    margin-bottom: 20px;
+}
+
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#results-table th {
+    background-color: #f0f0f0;
+}
+
+.results-visualization {
+    /* Styles pour les graphiques ou la carte interactive */
+}
+
+.download-share {
+    margin-top: 20px;
+}
+
+/* ... (styles précédents) ... */
+
+/* Tableau de bord */
+.dashboard {
+    padding: 30px;
+}
+
+.dashboard section {
+    margin-bottom: 30px;
+}
+
+.dashboard h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#elections-list, #voters-list {
+    list-style: none;
+    padding: 0;
+}
+
+#voter-search {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+#participation-chart, #votes-by-candidate-chart {
+    /* Styles pour les graphiques */
+    width: 100%;
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    border: 1px solid #ddd;
+}
+
+/* ... (styles pour le tableau des résultats et les boutons) ... */

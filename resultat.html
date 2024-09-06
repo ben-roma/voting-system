@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats des élections - Système de Vote Électronique Gabonais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            </header>
+
+        <main>
+            <section class="results-section">
+                <h2>Résultats des élections</h2>
+
+                <div class="election-selection">
+                    <label for="election-dropdown">Sélectionnez une élection:</label>
+                    <select id="election-dropdown">
+                        <option value="election1">Élection présidentielle 2023</option>
+                        <option value="election2">Élections législatives 2022</option>
+                        </select>
+                </div>
+
+                <div class="search-filters">
+                    <label for="district-filter">Filtrer par district:</label>
+                    <select id="district-filter">
+                        <option value="all">Tous les districts</option>
+                        <option value="kigali">Kigali</option>
+                        <option value="huye">Huye</option>
+                    </select>
+                </div>
+
+                <table id="results-table">
+                    <thead>
+                        <tr>
+                            <th>District</th> 
+                            <th>Candidat</th>
+                            <th>Parti politique</th>
+                            <th>Nombre de voix</th>
+                            <th>Pourcentage de voix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kigali</td>
+                            <td>Jean Dupont</td>
+                            <td>Parti de la Démocratie</td>
+                            <td>80,123</td>
+                            <td>45.2%</td>
+                        </tr>
+                        <tr>
+                            <td>Kigali</td>
+                            <td>Marie Dubois</td>
+                            <td>Union Nationale</td>
+                            <td>65,789</td>
+                            <td>37.1%</td>
+                        </tr>
+                        <tr>
+                            <td>Kigali</td>
+                            <td>Pierre Martin</td>
+                            <td>Rassemblement pour le Gabon</td>
+                            <td>32,456</td>
+                            <td>18.3%</td>
+                        </tr>
+                        <tr>
+                            <td>Huye</td>
+                            <td>Jean Dupont</td>
+                            <td>Parti de la Démocratie</td>
+                            <td>25,678</td>
+                            <td>38.9%</td>
+                        </tr>
+                        <tr>
+                            <td>Huye</td>
+                            <td>Marie Dubois</td>
+                            <td>Union Nationale</td>
+                            <td>30,234</td>
+                            <td>45.8%</td>
+                        </tr>
+                        <tr>
+                            <td>Huye</td>
+                            <td>Pierre Martin</td>
+                            <td>Rassemblement pour le Gabon</td>
+                            <td>10,111</td>
+                            <td>15.3%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="results-visualization">
+                    </div>
+
+                <div class="download-share">
+                    <button class="btn btn-primary" id="download-results">Télécharger les résultats (CSV)</button>
+                    <button class="btn" id="share-results">Partager les résultats</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

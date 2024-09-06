@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord - Agent électoral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            </header>
+
+        <main>
+            <section class="dashboard">
+                <h2>Tableau de bord - Agent électoral</h2>
+
+                <section class="elections-overview">
+                    <h3>Élections en cours</h3>
+                    <ul id="elections-list">
+                        </ul>
+                </section>
+
+                <section class="voter-management">
+                    <h3>Gestion des inscriptions</h3>
+                    <input type="text" id="voter-search" placeholder="Rechercher un électeur (NIP, nom, ...)">
+                    <ul id="voters-list">
+                        </ul>
+
+                    <button class="btn" id="add-voter">Ajouter un électeur</button>
+                </section>
+
+                <section class="voting-monitoring">
+                    <h3>Supervision du vote</h3>
+                    <div id="participation-chart">
+                        </div> 
+
+                    <div id="votes-by-candidate-chart">
+                        </div>
+                </section>
+
+                <section class="results">
+                    <h3>Résultats</h3>
+                    <div class="search-filters">
+                        </div>
+
+                    <table id="results-table">
+                        <thead>
+                            <tr>
+                                <th>District</th>
+                                <th>Candidat</th>
+                                <th>Parti politique</th>
+                                <th>Nombre de voix</th>
+                                <th>Pourcentage de voix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+
+                    <button class="btn btn-primary" id="generate-report">Générer un rapport</button>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats - Système de Vote Électronique Gabonais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="images/logo.webp" alt="Logo du système de vote gabonais"> 
+            </div>
+            <h1>Système de Vote Électronique Gabonais</h1>
+            <nav aria-label="Navigation principale"> 
+                <ul>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                    <li><a href="resultats.html">Résultats</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="results-section">
+                <h2>Résultats des élections</h2>
+
+                <div class="election-selection">
+                    <label for="election-dropdown">Sélectionnez une élection :</label>
+                    <select id="election-dropdown">
+                        <option value="election1">Élection présidentielle 2023</option>
+                        <option value="election2">Élections législatives 2022</option>
+                    </select>
+                </div>
+
+                <div class="search-filters">
+                    <label for="district-filter">Filtrer par district :</label>
+                    <select id="district-filter">
+                        <option value="all">Tous les districts</option>
+                        <option value="libreville">Libreville</option>
+                        <option value="port-gentil">Port-Gentil</option>
+                        <!-- Add other districts here -->
+                    </select>
+                </div>
+
+                <div class="results-table">
+                    <h3>Résultats pour l'élection présidentielle 2023</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Candidat</th>
+                                <th>Parti</th>
+                                <th>Pourcentage des votes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/1.png" alt="Candidat 1" width="50" height="50">
+                                    Candidat 1
+                                </td>
+                                <td>Parti A</td>
+                                <td>45%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/avatar03.png" alt="Candidat 2" width="50" height="50">
+                                    Candidat 2
+                                </td>
+                                <td>Parti B</td>
+                                <td>35%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/consultant-thumb.png" alt="Candidat 3" width="50" height="50">
+                                    Candidat 3
+                                </td>
+                                <td>Parti C</td>
+                                <td>20%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="download-share">
+                    <button class="btn btn-primary" id="download-results">Télécharger les résultats (CSV)</button>
+                    <button class="btn" id="share-results">Partager les résultats</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                <strong>Contact :</strong> 
+                <span id="contact-info">Centre Gabonais des Élections - Tél : +241 01 74 20 11 / +241 01 74 20 12</span>
+            </p>
+            <p>
+                <strong>Liens utiles :</strong> 
+                <a href="https://www.legabon.org/" id="legal-framework">Législation électorale</a> | 
+                <a href="faq.html" id="faq">FAQ</a>
+            </p>
+            <p>&copy; 2024 Système de Vote Électronique Gabonais. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

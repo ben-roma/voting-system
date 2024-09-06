@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reçu de Vote - Système de Vote Électronique Gabonais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            </header>
+
+        <main>
+            <section class="receipt-section">
+                <h2>Reçu de Vote</h2>
+
+                <div class="receipt-details">
+                    <p><strong>NIP de l'électeur :</strong> <span id="voter-nip"></span></p>
+                    <p><strong>Date et heure du vote :</strong> <span id="vote-timestamp"></span></p>
+                    <p><strong>Candidat sélectionné :</strong> <span id="selected-candidate"></span></p>
+                    <p><strong>Code de vérification :</strong> <span id="verification-code"></span></p>
+                </div>
+
+                <div class="receipt-instructions">
+                    <p>Conservez ce reçu précieusement. Il vous permet de vérifier que votre vote a été correctement enregistré sur la blockchain.</p>
+                    <p>Vous pouvez utiliser le code de vérification pour vérifier votre vote sur notre site web.</p>
+                </div>
+
+                <button class="btn btn-primary" id="print-receipt">Imprimer le reçu</button> 
+            </section>
+        </main>
+
+        <footer>
+            </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
