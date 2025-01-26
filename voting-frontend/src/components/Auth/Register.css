@@ -1,0 +1,106 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../../../public/images/flig-background.jpg'); /* Ajoute le chemin de ton image de fond ici */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Conteneur du formulaire */
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Message d'erreur et de succès */
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Liens et texte */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-options {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Pour centrer le formulaire et ajuster la mise en page */
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        width: 90%;
+    }
+}

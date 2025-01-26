@@ -1,0 +1,27 @@
+/* Header.css */
+
+.header-logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand span {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  
+  .nav-link:hover {
+    color: #ccc !important;
+  }
+  
